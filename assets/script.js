@@ -3,7 +3,7 @@
 function codificarTexto() {
     var textoAlterado;
     var textoPuro = document.getElementById('campoTexto').value;
-    
+
     if (textoPuro.includes('e')) {
         textoAlterado = textoPuro.replace(/[e]+/g, 'enter');
     }
@@ -23,9 +23,11 @@ function codificarTexto() {
     if (textoPuro.includes('u')) {
         textoAlterado = textoAlterado.replace(/[u]+/g, 'ufat');
     }
+
+    document.querySelector('#resultado').innerHTML = textoAlterado;
+
 }
 
-document.querySelector('#resultado').innerHTML = textoAlterado;
 
 
 /*
