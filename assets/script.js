@@ -1,8 +1,7 @@
-
-
 function codificarTexto() {
-    var textoAlterado;
-    var textoPuro = document.getElementById('campoTexto').value;
+
+    let textoAlterado;
+    let textoPuro = document.getElementById('campoTexto').value;
 
     if (textoPuro.includes('e')) {
         textoAlterado = textoPuro.replace(/[e]+/g, 'enter');
@@ -24,33 +23,40 @@ function codificarTexto() {
         textoAlterado = textoAlterado.replace(/[u]+/g, 'ufat');
     }
 
-    document.querySelector('#resultado').innerHTML = textoAlterado;
+    return document.querySelector('#resultado').innerHTML = textoAlterado;
 
 }
 
-
-/*
 function decodificarTexto() {
+    let textoPuro = document.getElementById('campoTexto').value;
+    let textoAlterado;
 
-    if (textoAlterado.includes('enter')) {
-        textoAlterado = textoAlterado.replace(/enter/img, 'e');
+    if (textoPuro.includes('enter')) {
+        textoAlterado = textoPuro.replace(/enter/img, 'e');
     }
 
-    if (textoAlterado.includes('imes')) {
+    if (textoPuro.includes('imes')) {
         textoAlterado = textoAlterado.replace(/imes/img, 'i');
     }
 
-    if (textoAlterado.includes('ai')) {
+    if (textoPuro.includes('ai')) {
         textoAlterado = textoAlterado.replace(/ai/img, 'a');
     }
 
-    if (textoAlterado.includes('ober')) {
+    if (textoPuro.includes('ober')) {
         textoAlterado = textoAlterado.replace(/ober/img, 'o');
     }
 
-    if (textoAlterado.includes('ufat')) {
+    if (textoPuro.includes('ufat')) {
         textoAlterado = textoAlterado.replace(/ufat/img, 'u');
     }
+
+    document.querySelector('#resultado').innerHTML = textoAlterado;
 }
 
-*/
+function copiar() {
+    let conteudo = document.querySelector('#resultado');
+    conteudo.select();
+    document.execCommand('copy');
+    document.querySelector('#resultado').innerHTML = "COPIADO!!";
+}

@@ -1,16 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 body {
-    background-color: #181818;
+    background: url(./imagens/junk-mail.jpg);
+    background-color: #0f0f0f;
     color: #f2f2f2;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .titulo-pag {
-    color: #00ff15;
+    background-color: #00ff15;
+    display: inline-block;
+    padding: 5px 20px;
+    color: #181818;
+    font-family: 'VT323', monospace;
+    text-transform: uppercase;
 }
 
-#conteudo, #cabeca {
-    margin: 0 auto;
+.subtitulo {
+    color: #aaaaaa;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#conteudo{
+    background-color: #0f0f0f;
+    margin: 25px auto;
     width: 500px;
+    padding: 0 20px;
 }
 
 form {
@@ -20,51 +37,67 @@ form {
 
 .campo {
     width: 500px;
-    height: 200px;
+    height: 100px;
     padding: 15px;
     border: none;
     background-color: #121212;
     color: #f1f1f1;
     border-radius: 10px;
+    box-sizing: border-box;
 }
 
 .codifica {
-    background: #ff5100;
+    background: #09ff00ec;
     border: none;
-    color: #fff;
-    font-size: 18px;
-    padding: 15px;
+    color: #161616;
+    font-size: 13px;
+    padding: 5px;
     margin-top: 15px;
     margin-bottom: 15px;
-    margin-right: 15px;
-    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border-radius: 5px;
 }
 
 .decodifica {
-    background: #dadada;
+    background: #cececeec;
     border: none;
-    color: #222222;
-    font-size: 18px;
-    padding: 15px;
+    color: #161616;
+    font-size: 13px;
+    padding: 5px;
     margin-top: 15px;
     margin-bottom: 15px;
-    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border-radius: 5px;
 }
 
 .resultado {
     background: #0a0a0a;
     padding: 20px;
     width: 500px;
+    box-sizing: border-box;
     border-radius: 10px;
+    border: none;
+    color: #ccc;
 }
 
 .copiar {
-    background: #fffc5b;
+    background: #00ff0d;
     border: none;
-    color: #9e7400;
-    font-size: 18px;
-    padding: 15px;
+    color: #0f0f0f;
+    font-size: 13px;
+    padding: 5px;
     margin-top: 15px;
     margin-bottom: 15px;
-    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+
+.copiado {
+    color: #f50303;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bolder;
 }

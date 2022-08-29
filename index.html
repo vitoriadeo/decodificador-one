@@ -8,26 +8,27 @@
 </head>
 
 <body>
-    <header id="cabeca">
+    <main id="conteudo">
+    <header>
         <h1 class="titulo-pag">Decodificador</h1>
         <p>Lorem ipsum dolor sit amet</p>
     </header>
 
-    <main id="conteudo">
+
         <section>
-            <h2>Digite o texto, palavra ou frase que queira decodificar ou codificar</h2>
-            <form>
+            <h2 class="subtitulo">Digite o texto, palavra ou frase que queira decodificar ou codificar</h2>
+            
                 <textarea id="campoTexto" class="campo" required></textarea>
                 <button id="btn" onclick="codificarTexto();" class="codifica">Codificar</button>
                 <button id="btn" onclick="decodificarTexto();" class="decodifica">Decodificar</button>
 
-                <form>
+                
         </section>
 
         <section>
-            <h2>Resultado</h2>
-            <article class="resultado" id="resultado"></article>
-                <button class="copiar">Copiar</button>
+            <h2 class="subtitulo">Resultado</h2>
+            <textarea class="resultado" id="resultado"></textarea>
+                <button onclick="copiar();" class="copiar">Copiar</button>
         </section>
     </main>
     <script type="text/javascript" src="./assets/script.js"></script>
