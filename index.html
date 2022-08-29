@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset200802.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheet.css" />    
+    <title>Decodificador de Textos</title>
+  </head>
 
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="./assets/stylesheet.css" />
-    <title>Decodificador</title>
-</head>
-
-<body>
-    <main id="conteudo">
-    <header>
-        <h1 class="titulo-pag">Decodificador</h1>
-        <p>Lorem ipsum dolor sit amet</p>
+  <body>
+    <header id="cabeca">
+      <h1 class="titulo-pag">Decodificador de Textos</h1>
+      <p class="descricao">Codifique ou decodifique seus textos</p>
     </header>
+    <main id="conteudo">
+      <section>
+        <h2 class="subtitulo">
+          Digite o texto, frase ou palavra que queira decodificar ou codificar
+        </h2>
 
+        <textarea id="campoTexto" class="campo" required></textarea>
+        <button id="btn" onclick="codificarTexto();" class="codifica">
+          Codificar
+        </button>
+        <button id="btn" onclick="decodificarTexto();" class="decodifica">
+          Decodificar
+        </button>
+      </section>
 
-        <section>
-            <h2 class="subtitulo">Digite o texto, palavra ou frase que queira decodificar ou codificar</h2>
-            
-                <textarea id="campoTexto" class="campo" required></textarea>
-                <button id="btn" onclick="codificarTexto();" class="codifica">Codificar</button>
-                <button id="btn" onclick="decodificarTexto();" class="decodifica">Decodificar</button>
-
-                
-        </section>
-
-        <section>
-            <h2 class="subtitulo">Resultado</h2>
-            <textarea class="resultado" id="resultado"></textarea>
-                <button onclick="copiar();" class="copiar">Copiar</button>
-        </section>
+      <section>
+        <h2 class="subtitulo">Resultado</h2>
+        <textarea class="resultado" id="resultado"></textarea>
+        <button onclick="copiar();" class="copiar">Copiar</button>
+      </section>
     </main>
-    <script type="text/javascript" src="./assets/script.js"></script>
-</body>
 
+    <footer id="rodape">
+        <p class="rodape-txt">desenvolvido por vitória oliveira</p>
+    </footer>
+    <script type="text/javascript" src="./assets/script.js"></script>
+  </body>
 </html>
