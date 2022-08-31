@@ -138,10 +138,7 @@ a {
     .campo, .resultado {
         width: 100%;
         background: #0a0a0a;
-        font-size: 17px;
-    }
-
-    .copiado{
-        font-size: 17px;
+        font-size: 15px;
+        border: 1px solid #00ff0d;
     }
 }
