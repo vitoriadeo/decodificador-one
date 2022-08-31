@@ -7,6 +7,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color:#0a0a0a;
+}
+
 .titulo-pag {
     background-color: #00ff15;
     display: block;
@@ -53,11 +58,6 @@ body {
     font-family: 'VT323', monospace;
     text-align: right;
     text-decoration: underline #8f8f8f;
-}
-
-form {
-    width: 500px;
-    margin: 0 auto;
 }
 
 .campo {
@@ -123,9 +123,25 @@ form {
     border-radius: 5px;
 }
 
-.copiado {
+.copiado{
     color: #f50303;
     font-size: 13px;
     text-transform: uppercase;
     font-weight: bolder;
+}
+
+@media screen and (max-width: 480px) {
+    #conteudo, #cabeca, #rodape {
+        width: 85%;
+    }
+
+    .campo, .resultado {
+        width: 100%;
+        background: #0a0a0a;
+        font-size: 17px;
+    }
+
+    .copiado{
+        font-size: 17px;
+    }
 }
